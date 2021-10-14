@@ -19,9 +19,9 @@ const addMenu = () => {
 
 const generateorder=({id,Type,Name,quintity,colddrinks})=>{
     return (`<div class="col-md-6 col-lg-4 mt-3" id=${id} key=${id} >
-    <div class="card" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; "  >
-        <div class="card-header" style="background-color:#FCB6B0;">
-            <div class="d-flex justify-content-end">
+    <div class="card"  style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; "  >
+        <div class="card-header"  >
+            <div class="d-flex justify-content-end" >
                 <button type="button" class="btn btn-outline-primary" name=${id} onclick="editOrder(this)" >
                     <i class="fas fa-pencil-alt name=${id} onclick="editOrder(this)" ></i>
                 </button>
@@ -31,7 +31,7 @@ const generateorder=({id,Type,Name,quintity,colddrinks})=>{
             </div>
         </div>
         
-        <div class="card-body" style="background-color:#00DCD6; ">
+        <div class="card-body" style="background-image: url(./biryani\ 1.jpg);">
             <h5 class="card-title">${Type}</h5>
             <h5 class="card-title">${Name}</h5>
             <h5 class="card-title">${quintity}</h5>
